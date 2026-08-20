@@ -4,33 +4,34 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>Reddy Arena — Pro-Grade Sports Equipment, Fitness Gear & Academy Supplies</title>
-<meta name="description" content="Get premium quality sports gear, cricket kits, gym equipment, and tournament supplies at Reddy Arena. Avail exclusive 10% discount on WhatsApp inquiry.">
+<title>Reddy Academy — Practical Tech Bootcamps & Career Programs</title>
+<meta name="description" content="Master in-demand tech and marketing skills with industry mentors at Reddy Academy. Get 1-on-1 mentorship, live projects, and instant WhatsApp enrollment.">
 <meta name="robots" content="index, follow">
 
-<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Teko:wght@500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-<!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <style>
 :root {
-  --bg-deep: #080c14;
-  --bg-card: #0f172a;
-  --bg-card-hover: #152238;
-  --bg-subtle: #1e293b;
-  --accent-orange: #ff5722;
-  --accent-orange-hover: #e64a19;
-  --accent-volt: #ccff00;
-  --accent-cyan: #00e5ff;
+  --bg-deep: #090d1a;
+  --bg-surface: #0f172a;
+  --bg-card: #131d35;
+  --bg-card-hover: #1a2747;
+  --bg-accent-subtle: rgba(99, 102, 241, 0.08);
+  --primary-indigo: #6366f1;
+  --primary-indigo-hover: #4f46e5;
+  --accent-mint: #10b981;
+  --accent-cyan: #06b6d4;
+  --accent-amber: #f59e0b;
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
+  --text-muted: #64748b;
   --border-color: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(255, 87, 34, 0.35);
-  --card-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  --border-glow: rgba(99, 102, 241, 0.35);
+  --card-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
 }
 
 * {
@@ -48,11 +49,9 @@ html, body {
   color: var(--text-primary);
 }
 
-body { line-height: 1.6; }
+body { line-height: 1.65; }
 
-/* ========================================================
-   NAVIGATION
-   ======================================================== */
+/* NAVIGATION */
 nav {
   width: 100%;
   position: fixed;
@@ -63,7 +62,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(8, 12, 20, 0.92);
+  background: rgba(9, 13, 26, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-color);
@@ -73,34 +72,33 @@ nav {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Teko', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
   color: #ffffff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: -0.5px;
 }
 
 .logo-badge {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent-orange), #ff8a65);
+  background: linear-gradient(135deg, var(--primary-indigo), #818cf8);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 19px;
+  font-size: 18px;
   color: #ffffff;
-  box-shadow: 0 6px 18px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.4);
 }
 
 .logo span {
-  color: var(--accent-orange);
+  color: var(--accent-mint);
 }
 
 .nav-links {
   display: flex;
-  gap: 28px;
+  gap: 26px;
 }
 
 .nav-links a {
@@ -112,13 +110,12 @@ nav {
 }
 
 .nav-links a:hover {
-  color: var(--accent-volt);
+  color: var(--accent-mint);
 }
 
-/* NAVBAR BUTTON (DESKTOP DEFAULT) */
 .nav-btn {
   text-decoration: none;
-  background: linear-gradient(135deg, var(--accent-orange), var(--accent-orange-hover));
+  background: linear-gradient(135deg, var(--primary-indigo), var(--primary-indigo-hover));
   color: #fff;
   padding: 10px 22px;
   border-radius: 50px;
@@ -128,18 +125,16 @@ nav {
   align-items: center;
   gap: 8px;
   transition: 0.3s;
-  box-shadow: 0 4px 20px rgba(255, 87, 34, 0.45);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
   white-space: nowrap;
 }
 
 .nav-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 87, 34, 0.65);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
 }
 
-/* ========================================================
-   HERO SECTION (SPLIT WITH IMAGE)
-   ======================================================== */
+/* HERO SECTION (EXACT ORIGINAL PRESERVED) */
 .hero-split {
   padding: 125px 6% 50px;
   display: flex;
@@ -167,8 +162,8 @@ nav {
 
 .hero-image-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 25px 55px rgba(255, 87, 34, 0.3);
-  border-color: var(--accent-orange);
+  box-shadow: 0 25px 55px rgba(99, 102, 241, 0.3);
+  border-color: var(--primary-indigo);
 }
 
 .hero-image-card img {
@@ -185,7 +180,7 @@ nav {
   bottom: 14px;
   left: 14px;
   right: 14px;
-  background: rgba(15, 23, 42, 0.92);
+  background: rgba(17, 25, 46, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -230,9 +225,9 @@ nav {
 }
 
 .badge-tag {
-  background: rgba(255, 87, 34, 0.12);
-  border: 1px solid rgba(255, 87, 34, 0.4);
-  color: var(--accent-orange);
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  color: #a5b4fc;
   padding: 6px 18px;
   border-radius: 30px;
   font-size: 12px;
@@ -256,7 +251,7 @@ nav {
 }
 
 .hero-text-side h1 span {
-  background: linear-gradient(135deg, var(--accent-orange), var(--accent-volt));
+  background: linear-gradient(135deg, var(--primary-indigo), var(--accent-mint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -289,13 +284,13 @@ nav {
 }
 
 .highlight-item i {
-  color: var(--accent-volt);
+  color: var(--accent-mint);
   font-size: 15px;
 }
 
 .btn-primary {
   text-decoration: none;
-  background: linear-gradient(135deg, var(--accent-orange), #ff8a65);
+  background: linear-gradient(135deg, var(--primary-indigo), var(--primary-indigo-hover));
   color: #fff;
   padding: 15px 36px;
   border-radius: 50px;
@@ -306,84 +301,98 @@ nav {
   justify-content: center;
   gap: 10px;
   transition: 0.3s;
-  box-shadow: 0 8px 26px rgba(255, 87, 34, 0.45);
+  box-shadow: 0 8px 26px rgba(99, 102, 241, 0.45);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(255, 87, 34, 0.65);
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.65);
 }
 
-/* ========================================================
-   STATS / METRICS STRIP
-   ======================================================== */
-.stats-strip-section {
-  padding: 10px 6% 40px;
-}
-
-.stats-strip {
+/* SECTION 1: FLOATING VALUE PROP STATS STRIP */
+.stats-banner-wrap {
+  padding: 10px 6% 35px;
   max-width: 1250px;
   margin: 0 auto;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 20px;
-  padding: 24px 25px;
+}
+
+.stats-glass-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 16px;
+  background: linear-gradient(145deg, rgba(19, 29, 53, 0.8), rgba(15, 23, 42, 0.95));
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 24px;
   box-shadow: var(--card-shadow);
+}
+
+.stat-item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
   text-align: center;
 }
 
-.stat-cell h3 {
+.stat-item-box .num {
   font-family: 'Outfit', sans-serif;
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--accent-volt);
+  font-size: 30px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #fff, var(--accent-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.stat-cell p {
+.stat-item-box .label {
   font-size: 12px;
-  font-weight: 700;
   color: var(--text-secondary);
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-top: 4px;
 }
 
-/* ========================================================
-   BENTO GRID SERVICES & EQUIPMENT
-   ======================================================== */
-.services-section {
+/* SECTION 2: ACADEMY ADVANTAGES / PILLARS (NEW STRUCTURAL SECTION) */
+.pillars-section {
   padding: 60px 6%;
-  background: var(--bg-deep);
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .section-head {
   text-align: center;
-  margin-bottom: 40px;
+  max-width: 720px;
+  margin: 0 auto 45px;
 }
 
-.section-head .section-tag {
-  color: var(--accent-orange);
+.section-head .tag-sub {
+  color: var(--accent-mint);
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
-  display: block;
+  letter-spacing: 1.2px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 .section-head h2 {
   font-family: 'Outfit', sans-serif;
   font-size: 32px;
   font-weight: 800;
-  margin-bottom: 8px;
   color: #fff;
+  line-height: 1.25;
+  margin-bottom: 12px;
 }
 
-.section-head p { color: var(--text-secondary); font-size: 14px; }
+.section-head p {
+  color: var(--text-secondary);
+  font-size: 14.5px;
+}
 
-.bento-grid {
+.pillars-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -391,158 +400,368 @@ nav {
   margin: 0 auto;
 }
 
-.bento-card {
+.pillar-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 22px;
-  padding: 28px;
+  border-radius: 20px;
+  padding: 28px 24px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-glow);
+  background: var(--bg-card-hover);
+}
+
+.pillar-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--accent-mint);
+  margin-bottom: 18px;
+}
+
+.pillar-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.pillar-card p {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* SECTION 3: UPGRADED COURSES CARDS (NEW BENTO & PRICING STYLE) */
+.courses-section {
+  padding: 70px 6%;
+  background: var(--bg-deep);
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.course-card-v2 {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.35s ease;
   box-shadow: var(--card-shadow);
+}
+
+.course-card-v2:hover {
+  border-color: var(--primary-indigo);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(99, 102, 241, 0.22);
+}
+
+.course-banner {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+}
+
+.course-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.course-card-v2:hover .course-banner img {
+  transform: scale(1.06);
+}
+
+.course-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(9, 13, 26, 0.1) 0%, rgba(9, 13, 26, 0.9) 100%);
+}
+
+.course-pill {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  color: #a5b4fc;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.course-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.course-body h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.course-body .desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.course-modules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.module-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.module-row i {
+  color: var(--accent-mint);
+  font-size: 13px;
+}
+
+.course-card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-action-btn {
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--primary-indigo), var(--primary-indigo-hover));
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.25s;
+}
+
+.course-action-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+.format-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-mint);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* SECTION 4: COMPARISON MATRIX (TRUST BOOSTER) */
+.comparison-section {
+  padding: 60px 6%;
+  background: var(--bg-surface);
+}
+
+.comparison-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.comp-row-head {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  padding: 18px 24px;
+  background: rgba(99, 102, 241, 0.12);
+  border-bottom: 1px solid var(--border-color);
+  font-weight: 800;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.comp-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 13.5px;
+  align-items: center;
+}
+
+.comp-row:last-child { border-bottom: none; }
+.comp-feature { color: var(--text-primary); font-weight: 600; }
+.comp-other { color: #64748b; }
+.comp-reddy { color: var(--accent-mint); font-weight: 700; display: flex; align-items: center; gap: 6px; }
+
+/* SECTION 5: STEP-BY-STEP ADMISSION PROCESS */
+.process-section {
+  padding: 70px 6%;
+  background: var(--bg-deep);
+}
+
+.process-grid-modern {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.step-card-modern {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 28px 24px;
+  position: relative;
   transition: 0.3s;
+}
+
+.step-card-modern:hover {
+  border-color: var(--primary-indigo);
+  transform: translateY(-4px);
+}
+
+.step-badge-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--primary-indigo);
+  background: rgba(99, 102, 241, 0.12);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.step-card-modern h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.step-card-modern p {
+  color: var(--text-secondary);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+/* SECTION 6: STUDENT REVIEWS & TESTIMONIALS */
+.reviews-section {
+  padding: 60px 6%;
+  background: var(--bg-surface);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.bento-card:hover {
-  border-color: var(--accent-orange);
-  background: var(--bg-card-hover);
-  transform: translateY(-4px);
+.stars-rating {
+  color: var(--accent-amber);
+  font-size: 13px;
+  margin-bottom: 12px;
 }
 
-.bento-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
-  background: rgba(255, 87, 34, 0.12);
-  color: var(--accent-orange);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  margin-bottom: 18px;
-}
-
-.bento-card h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-.bento-card p {
+.review-text {
   color: var(--text-secondary);
   font-size: 13.5px;
+  line-height: 1.65;
   margin-bottom: 18px;
-  line-height: 1.6;
+  font-style: italic;
 }
 
-.card-cta-link {
-  text-decoration: none;
-  color: var(--accent-volt);
-  font-weight: 800;
-  font-size: 13px;
-  display: inline-flex;
+.reviewer-meta {
+  display: flex;
   align-items: center;
-  gap: 6px;
-  transition: 0.2s;
+  gap: 12px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 14px;
 }
 
-.card-cta-link:hover { color: #fff; }
-
-/* ========================================================
-   ORDER & SUPPLY PROCESS
-   ======================================================== */
-.process-section {
-  padding: 60px 6%;
-  background: var(--bg-subtle);
-}
-
-.process-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
-.process-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 20px;
-  padding: 26px;
-  position: relative;
-}
-
-.step-num {
-  font-family: 'Outfit', sans-serif;
-  font-size: 34px;
-  font-weight: 900;
-  color: rgba(255, 87, 34, 0.25);
-  position: absolute;
-  top: 15px;
-  right: 20px;
-}
-
-.process-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: #fff; }
-.process-card p { color: var(--text-secondary); font-size: 13px; line-height: 1.6; }
-
-/* ========================================================
-   ARENA QUALITY GUARANTEE BANNER
-   ======================================================== */
-.banner-guarantee {
-  padding: 40px 6% 60px;
-}
-
-.guarantee-box {
-  max-width: 1250px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  border: 1px solid rgba(255, 87, 34, 0.3);
-  border-radius: 24px;
-  padding: 40px 24px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.guarantee-box h3 {
-  font-family: 'Outfit', sans-serif;
-  font-size: 28px;
+.reviewer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-indigo), var(--accent-mint));
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 800;
-  margin-bottom: 10px;
+  font-size: 14px;
   color: #fff;
 }
 
-.guarantee-box p {
-  color: var(--text-secondary);
+.reviewer-info h4 {
   font-size: 14px;
-  max-width: 680px;
-  margin: 0 auto 22px;
-}
-
-.guarantee-points {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 25px;
-}
-
-.g-point {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
   font-weight: 700;
-  color: #f8fafc;
+  color: #fff;
 }
 
-.g-point i { color: var(--accent-volt); }
+.reviewer-info span {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
 
-/* ========================================================
-   FAQS
-   ======================================================== */
-.faq-section { padding: 50px 6%; background: var(--bg-deep); }
+/* SECTION 7: FAQS */
+.faq-section {
+  padding: 60px 6%;
+  background: var(--bg-deep);
+}
+
 .faq-container {
   max-width: 850px;
   margin: 0 auto;
@@ -554,20 +773,28 @@ nav {
 .faq-item {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 22px;
   box-shadow: var(--card-shadow);
 }
 
-.faq-item h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: #fff; }
-.faq-item p { color: var(--text-secondary); font-size: 13px; line-height: 1.6; }
+.faq-item h4 {
+  font-size: 15.5px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
 
-/* ========================================================
-   LEGAL TERMS & POLICY COMPLIANCE
-   ======================================================== */
+.faq-item p {
+  color: var(--text-secondary);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+/* SECTION 8: LEGAL POLICY TERMS */
 .legal-section {
   padding: 50px 6%;
-  background: #05080e;
+  background: #060913;
   border-top: 1px solid var(--border-color);
 }
 
@@ -576,36 +803,60 @@ nav {
   margin: 0 auto;
 }
 
-.legal-container h3 { font-size: 15px; font-weight: 700; margin: 18px 0 6px; color: #fff; }
-.legal-container h3:first-child { margin-top: 0; }
-.legal-container p { color: var(--text-secondary); font-size: 13px; line-height: 1.7; margin-bottom: 10px; }
+.legal-container h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 18px 0 6px;
+  color: #fff;
+}
 
-/* ========================================================
-   BOTTOM CTA BOX
-   ======================================================== */
-.cta-section { padding: 30px 6% 70px; }
+.legal-container h3:first-child { margin-top: 0; }
+.legal-container p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* SECTION 9: CALL TO ACTION BANNER */
+.cta-section {
+  padding: 40px 6% 70px;
+  background: var(--bg-deep);
+}
+
 .cta-box {
   max-width: 1250px;
   margin: 0 auto;
-  background: linear-gradient(135deg, var(--accent-orange), #ff8a65);
+  background: linear-gradient(135deg, var(--primary-indigo), #818cf8);
   border-radius: 24px;
-  padding: 42px 20px;
+  padding: 45px 24px;
   text-align: center;
   color: #fff;
-  box-shadow: 0 15px 35px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
 }
 
-.cta-box h2 { font-family: 'Outfit', sans-serif; font-size: 30px; font-weight: 800; margin-bottom: 10px; }
-.cta-box p { font-size: 14.5px; margin: 0 auto 22px; max-width: 600px; opacity: 0.95; }
+.cta-box h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.cta-box p {
+  font-size: 15px;
+  margin: 0 auto 24px;
+  max-width: 600px;
+  opacity: 0.95;
+}
 
 .cta-btn-light {
   text-decoration: none;
-  background: #0f172a;
+  background: #090d1a;
   color: #fff;
   padding: 14px 32px;
   border-radius: 50px;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 14.5px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -615,16 +866,15 @@ nav {
 .cta-btn-light:hover {
   transform: translateY(-2px);
   background: #ffffff;
-  color: #0f172a;
+  color: #090d1a;
 }
 
-/* ========================================================
-   FOOTER
-   ======================================================== */
+/* FOOTER */
 footer {
-  background: #030509;
+  background: #04060c;
   color: #fff;
   padding: 50px 6% 25px;
+  border-top: 1px solid var(--border-color);
 }
 
 .footer-grid {
@@ -635,12 +885,35 @@ footer {
   margin: 0 auto 40px;
 }
 
-.footer-col h4 { font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #fff; }
-.footer-col p { color: #64748b; font-size: 13px; line-height: 1.6; }
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #fff;
+}
 
-.footer-links { display: flex; flex-direction: column; gap: 10px; }
-.footer-links a { text-decoration: none; color: #94a3b8; font-size: 13px; transition: 0.3s; }
-.footer-links a:hover { color: var(--accent-orange); }
+.footer-col p {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--accent-mint);
+}
 
 .footer-bottom {
   text-align: center;
@@ -672,173 +945,7 @@ footer {
 
 .float-wa:hover { transform: scale(1.08); }
 
-/* ========================================================
-   POPUP OVERLAY (10% OFF OFFER)
-   ======================================================== */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(3, 7, 18, 0.88);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal-banner-card {
-  width: 100%;
-  max-width: 460px;
-  background: linear-gradient(180deg, #111c30 0%, #090e17 100%);
-  border: 1.5px solid rgba(255, 87, 34, 0.4);
-  border-radius: 28px;
-  overflow: visible;
-  box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.9), 0 0 35px rgba(255, 87, 34, 0.25);
-  position: relative;
-  transform: scale(0.9);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  padding: 42px 24px 26px;
-  text-align: center;
-}
-
-.modal-overlay.active .modal-banner-card {
-  transform: scale(1);
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  width: 32px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 10;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: 0.2s;
-}
-
-.modal-close-btn:hover {
-  background: rgba(239, 68, 68, 0.9);
-  color: #fff;
-}
-
-/* ATHLETIC TOP PILL OFFER BADGE */
-.popup-pill-badge {
-  position: absolute;
-  top: -18px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--accent-orange), #ff9800);
-  color: #ffffff;
-  padding: 6px 20px;
-  border-radius: 50px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 12px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  box-shadow: 0 6px 20px rgba(255, 87, 34, 0.6);
-  border: 2px solid #0f172a;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  animation: pillPulse 2s infinite ease-in-out;
-}
-
-@keyframes pillPulse {
-  0% { transform: translateX(-50%) scale(1); }
-  50% { transform: translateX(-50%) scale(1.05); box-shadow: 0 8px 24px rgba(255, 87, 34, 0.85); }
-  100% { transform: translateX(-50%) scale(1); }
-}
-
-.popup-sports-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 16px;
-  border-radius: 20px;
-  background: rgba(255, 87, 34, 0.15);
-  border: 1px solid rgba(255, 87, 34, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  color: var(--accent-orange);
-  box-shadow: 0 10px 25px rgba(255, 87, 34, 0.2);
-}
-
-.popup-title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 23px;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 8px;
-  line-height: 1.3;
-}
-
-.popup-title span {
-  color: var(--accent-volt);
-}
-
-.popup-desc {
-  font-size: 13.5px;
-  color: var(--text-secondary);
-  margin-bottom: 22px;
-  line-height: 1.6;
-}
-
-.popup-wa-btn {
-  background: #25D366;
-  color: #ffffff;
-  width: 100%;
-  padding: 14px;
-  border-radius: 14px;
-  font-size: 15px;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
-  transition: 0.2s;
-}
-
-.popup-wa-btn:hover {
-  background: #20ba57;
-  transform: translateY(-2px);
-}
-
-.popup-subtext {
-  font-size: 11px;
-  color: #64748b;
-  margin-top: 12px;
-}
-
-/* ========================================================
-   RESPONSIVE MEDIA QUERIES & MOBILE FIXES
-   ======================================================== */
+/* RESPONSIVE MEDIA QUERIES */
 @media (min-width: 768px) {
   .hero-split {
     display: grid;
@@ -854,9 +961,12 @@ footer {
   .hero-text-side p { margin-left: 0; margin-right: 0; }
   .hero-highlights { align-items: flex-start; }
   .hero-image-card { order: 2; max-width: 100%; }
-  .stats-strip { grid-template-columns: repeat(4, 1fr); }
-  .bento-grid { grid-template-columns: repeat(2, 1fr); }
-  .process-grid { grid-template-columns: repeat(4, 1fr); }
+  
+  .stats-glass-grid { grid-template-columns: repeat(4, 1fr); }
+  .pillars-grid { grid-template-columns: repeat(3, 1fr); }
+  .courses-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid-modern { grid-template-columns: repeat(4, 1fr); }
+  .reviews-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
   .nav-btn span.btn-short-txt { display: none; }
 }
@@ -865,31 +975,14 @@ footer {
   nav { padding: 18px 8%; }
   .hero-split { padding: 150px 8% 70px; }
   .hero-text-side h1 { font-size: 54px; }
-  .bento-grid { grid-template-columns: repeat(3, 1fr); }
-  .bento-grid .bento-card:first-child { grid-column: span 2; }
   .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
 }
 
-/* MOBILE VIEW COMPACT FIX */
 @media (max-width: 767px) {
   .nav-links { display: none; }
-  
-  nav {
-    padding: 12px 4%;
-  }
-
-  .logo {
-    font-size: 24px;
-    gap: 8px;
-  }
-
-  .logo-badge {
-    width: 32px;
-    height: 32px;
-    font-size: 15px;
-  }
-
-  /* Compact Sleek Button for Mobile Header */
+  nav { padding: 12px 4%; }
+  .logo { font-size: 24px; gap: 8px; }
+  .logo-badge { width: 32px; height: 32px; font-size: 15px; }
   .nav-btn {
     padding: 7px 14px;
     font-size: 12px;
@@ -897,13 +990,11 @@ footer {
     gap: 5px;
     border-radius: 20px;
   }
-
-  .nav-btn span.btn-full-txt {
-    display: none; /* Desktop text hide */
-  }
-
-  .nav-btn span.btn-short-txt {
-    display: inline; /* Compact mobile text show */
+  .nav-btn span.btn-full-txt { display: none; }
+  .nav-btn span.btn-short-txt { display: inline; }
+  .comp-row-head, .comp-row {
+    font-size: 11.5px;
+    padding: 12px 14px;
   }
 }
 </style>
@@ -911,305 +1002,420 @@ footer {
 
 <body>
 
-<!-- ========================================================
-     MODAL POPUP OVERLAY (10% OFF)
-     ======================================================== -->
-<div class="modal-overlay" id="autoModal">
-  <div class="modal-banner-card" id="modalCard">
-    <div class="modal-close-btn" id="modalCloseBtn" title="Close Banner">✕</div>
-
-    <div class="popup-pill-badge">
-      <i class="fa-solid fa-bolt"></i> UP TO 10% OFF ON EVERY PRODUCT
-    </div>
-
-    <div class="popup-sports-icon">
-      <i class="fa-solid fa-trophy"></i>
-    </div>
-
-    <h2 class="popup-title">Gear Up With <span>Reddy Arena</span></h2>
-    <p class="popup-desc">Claim flat 10% off on your entire equipment order. Instant quote & doorstep dispatch support.</p>
-
-    <a href="#" data-wa class="popup-wa-btn" target="_blank" rel="noopener">
-      <i class="fa-brands fa-whatsapp"></i> Order Now on WhatsApp
-    </a>
-
-    <p class="popup-subtext">Clicking anywhere on this modal opens direct WhatsApp support</p>
-  </div>
-</div>
-
-<!-- ========================================================
-     NAVBAR (WITH COMPACT MOBILE BUTTON FIX)
-     ======================================================== -->
 <nav>
   <div class="logo">
     <div class="logo-badge">
-      <i class="fa-solid fa-dumbbell"></i>
+      <i class="fa-solid fa-graduation-cap"></i>
     </div>
-    Reddy <span>Arena</span>
+    Reddy <span>Academy</span>
   </div>
 
   <div class="nav-links">
     <a href="#">Home</a>
-    <a href="#gear">Gear & Equipment</a>
-    <a href="#process">How to Order</a>
+    <a href="#features">Features</a>
+    <a href="#courses">Courses</a>
+    <a href="#process">Admission</a>
     <a href="#faq">FAQ</a>
-    <a href="#legal">Disclaimers</a>
+    <a href="#legal">Policies</a>
   </div>
 
   <a href="#" data-wa class="nav-btn" target="_blank" rel="noopener">
     <i class="fa-brands fa-whatsapp"></i>
-    <span class="btn-full-txt">Get Wholesale Quote</span>
-    <span class="btn-short-txt">Quote</span>
+    <span class="btn-full-txt">Book Free Counseling</span>
+    <span class="btn-short-txt">Counseling</span>
   </a>
 </nav>
 
-<!-- ========================================================
-     HERO SECTION
-     ======================================================== -->
 <section class="hero-split">
 
-  <!-- CLICKABLE HERO IMAGE (Loads your local image.jpeg) -->
-  <a href="#" data-wa class="hero-image-card" target="_blank" rel="noopener" title="Inquire Sports Gear on WhatsApp">
-    <img src="image.jpeg" alt="Reddy Arena Sports Gear Banner">
+  <a href="#" data-wa class="hero-image-card" target="_blank" rel="noopener" title="Inquire Courses on WhatsApp">
+    <img src="image.jpeg" alt="Reddy Academy Bootcamp Banner">
+   
   </a>
 
-  <!-- HERO CONTENT -->
   <div class="hero-text-side">
     <div class="badge-tag">
-      <i class="fa-solid fa-fire"></i>
-      Pro-Grade Sports & Fitness Gear
+      <i class="fa-solid fa-bolt"></i>
+      Career Acceleration & Tech Bootcamps
     </div>
 
-    <h1>Elevate Your Game With <span>Reddy Arena</span></h1>
+    <h1>Launch High-Growth Careers With <span>Reddy Academy</span></h1>
 
-    <p>Engineered for champions. From premium cricket kits and tournament-grade racket gear to heavy-duty gym setups and academy bulk supplies.</p>
+    <p>Master in-demand tech and business skills with hands-on capstone projects, live mentor feedback, and guaranteed placement training support.</p>
 
     <div class="hero-highlights">
-      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Pro-Grade Bats, Kits, Balls & Protective Gear</div>
-      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Home & Commercial Gym Fitness Equipment</div>
-      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Academy, School & Tournament Bulk Supply Rates</div>
+      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Live Interactive Classes & Project Code Reviews</div>
+      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> 1-on-1 Portfolio Building & Mock Interview Prep</div>
+      <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Dedicated WhatsApp Doubt Clearance & Community</div>
     </div>
 
     <a href="#" data-wa class="btn-primary" target="_blank" rel="noopener">
       <i class="fa-brands fa-whatsapp"></i>
-      Claim 10% OFF & Order Now
+      Connect & Inquire on WhatsApp
     </a>
   </div>
 
 </section>
 
-<!-- ========================================================
-     STATS STRIP
-     ======================================================== -->
-<section class="stats-strip-section">
-  <div class="stats-strip">
-    <div class="stat-cell">
-      <h3>100%</h3>
-      <p>Tested Pro Gear</p>
+<div class="stats-banner-wrap">
+  <div class="stats-glass-grid">
+    <div class="stat-item-box">
+      <div class="num">100%</div>
+      <div class="label">Live Hands-on Code</div>
     </div>
-    <div class="stat-cell">
-      <h3>Flat 10%</h3>
-      <p>Discount Available</p>
+    <div class="stat-item-box">
+      <div class="num">1-on-1</div>
+      <div class="label">Mentor Mentorship</div>
     </div>
-    <div class="stat-cell">
-      <h3>Bulk</h3>
-      <p>Institutional Supply</p>
+    <div class="stat-item-box">
+      <div class="num">Flexible</div>
+      <div class="label">Weekend & Weekday</div>
     </div>
-    <div class="stat-cell">
-      <h3>Instant</h3>
-      <p>WhatsApp Quotes</p>
+    <div class="stat-item-box">
+      <div class="num">24/7</div>
+      <div class="label">WhatsApp Support Desk</div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ========================================================
-     SERVICES & PRODUCTS BENTO GRID
-     ======================================================== -->
-<section class="services-section" id="gear">
+<section class="pillars-section" id="features">
   <div class="section-head">
-    <span class="section-tag">Product Categories</span>
-    <h2>Performance Equipment & Solutions</h2>
-    <p>Premium sports and athletic essentials curated for professionals, academies, and fitness studios.</p>
+    <span class="tag-sub">Built For Fast Growth</span>
+    <h2>The Practical Learning Advantage</h2>
+    <p>We eliminate fluff to focus 100% on skills that engineering and marketing teams actively recruit for.</p>
   </div>
 
-  <div class="bento-grid">
-    <div class="bento-card">
-      <div>
-        <div class="bento-icon"><i class="fa-solid fa-baseball-bat-ball"></i></div>
-        <h3>Cricket & Field Sports Gear</h3>
-        <p>Premium English & Kashmir willow bats, protective leg guards, gloves, match-grade leather balls, nets, and comprehensive team tournament kits designed for maximum durability.</p>
+  <div class="pillars-grid">
+    <div class="pillar-card">
+      <div class="pillar-icon-box">
+        <i class="fa-solid fa-terminal"></i>
       </div>
-      <a href="#" data-wa class="card-cta-link" target="_blank" rel="noopener">Inquire Cricket Kits <i class="fa-solid fa-arrow-right"></i></a>
+      <h3>Production Codebases</h3>
+      <p>Build real-world apps deployed on cloud infrastructure instead of trivial textbook toy projects.</p>
     </div>
 
-    <div class="bento-card">
-      <div>
-        <div class="bento-icon"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
-        <h3>Racket & Court Sports</h3>
-        <p>High-tension badminton and tennis rackets, feather shuttlecocks, tournament nets, grip tapes, and stringing accessories built for competitive accuracy.</p>
+    <div class="pillar-card">
+      <div class="pillar-icon-box">
+        <i class="fa-solid fa-user-tie"></i>
       </div>
-      <a href="#" data-wa class="card-cta-link" target="_blank" rel="noopener">Check Racket Catalog <i class="fa-solid fa-arrow-right"></i></a>
+      <h3>Direct Industry Mentors</h3>
+      <p>Get line-by-line feedback on your code and ad campaigns directly from seasoned working professionals.</p>
     </div>
 
-    <div class="bento-card">
-      <div>
-        <div class="bento-icon"><i class="fa-solid fa-dumbbell"></i></div>
-        <h3>Gym & Strength Training</h3>
-        <p>Hex dumbbells, Olympic barbells, cast iron kettlebells, multi-angle benches, resistance bands, and home workout essentials engineered for heavy load.</p>
+    <div class="pillar-card">
+      <div class="pillar-icon-box">
+        <i class="fa-solid fa-briefcase"></i>
       </div>
-      <a href="#" data-wa class="card-cta-link" target="_blank" rel="noopener">View Fitness Gear <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-
-    <div class="bento-card">
-      <div>
-        <div class="bento-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-        <h3>Academy & School Bulk Supply</h3>
-        <p>Wholesale sports equipment packages for sports academies, universities, schools, and corporate leagues with custom jersey printing and logo branding.</p>
-      </div>
-      <a href="#" data-wa class="card-cta-link" target="_blank" rel="noopener">Request Wholesale Pricing <i class="fa-solid fa-arrow-right"></i></a>
+      <h3>Job Placement Readiness</h3>
+      <p>Resume revamps, GitHub portfolio optimization, and structured technical + behavioral mock drill rounds.</p>
     </div>
   </div>
 </section>
 
-<!-- ========================================================
-     ORDER WORKFLOW PROCESS
-     ======================================================== -->
+<section class="courses-section" id="courses">
+  <div class="section-head">
+    <span class="tag-sub">In-Demand Tracks</span>
+    <h2>Curated Career Bootcamps</h2>
+    <p>Comprehensive syllabuses designed to take you from foundational basics to expert mastery.</p>
+  </div>
+
+  <div class="courses-grid">
+
+    <div class="course-card-v2">
+      <div class="course-banner">
+        <span class="course-pill"><i class="fa-solid fa-code"></i> Engineering</span>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Full Stack Dev Bootcamp" loading="lazy">
+      </div>
+      <div class="course-body">
+        <h3>Full-Stack MERN Development</h3>
+        <p class="desc">Master React, Node.js, Express, MongoDB & Tailwind. Build and deploy 6 production-grade apps.</p>
+        
+        <div class="course-modules-list">
+          <div class="module-row"><i class="fa-solid fa-check"></i> Advanced JavaScript (ES6+) & TypeScript Basics</div>
+          <div class="module-row"><i class="fa-solid fa-check"></i> REST API & Microservices Architecture</div>
+          <div class="module-row"><i class="fa-solid fa-check"></i> Cloud Deployment, Docker & CI/CD Pipelines</div>
+        </div>
+
+        <div class="course-card-footer">
+          <div class="format-tag"><i class="fa-regular fa-clock"></i> 12 Weeks Live</div>
+          <a href="#" data-wa class="course-action-btn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Get Syllabus
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card-v2">
+      <div class="course-banner">
+        <span class="course-pill"><i class="fa-solid fa-chart-line"></i> Growth</span>
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Performance Marketing" loading="lazy">
+      </div>
+      <div class="course-body">
+        <h3>Performance & Growth Marketing</h3>
+        <p class="desc">Master Meta Ads, Google PPC campaigns, Conversion Rate Optimization (CRO), and advanced analytics.</p>
+        
+        <div class="course-modules-list">
+          <div class="module-row"><i class="fa-solid fa-check"></i> Live Ad Budget Handling & Campaign Scaling</div>
+          <div class="module-row"><i class="fa-solid fa-check"></i> Funnel Strategy, Copywriting & Hook Design</div>
+          <div class="module-row"><i class="fa-solid fa-check"></i> Google Analytics 4 (GA4) & Tag Manager</div>
+        </div>
+
+        <div class="course-card-footer">
+          <div class="format-tag"><i class="fa-regular fa-clock"></i> 8 Weeks Live</div>
+          <a href="#" data-wa class="course-action-btn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Get Syllabus
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card-v2">
+      <div class="course-banner">
+        <span class="course-pill"><i class="fa-solid fa-brain"></i> Intelligence</span>
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data Science and AI" loading="lazy">
+      </div>
+      <div class="course-body">
+        <h3>Data Science & Practical AI</h3>
+        <p class="desc">Python data analysis, SQL databases, exploratory analytics, and applied Machine Learning models.</p>
+        
+        <div class="course-modules-list">
+          <div class="module-row"><i class="fa-solid fa-check"></i> Python, Pandas, NumPy & Data Visualization</div>
+          <div class="module-row"><i class="fa-solid fa-check"></i> Advanced SQL Queries & Data Wrangling</div>
+          <div class="module-row"><i class="fa-solid fa-check"></i> Applied ML Models & Generative AI Prompting</div>
+        </div>
+
+        <div class="course-card-footer">
+          <div class="format-tag"><i class="fa-regular fa-clock"></i> 10 Weeks Live</div>
+          <a href="#" data-wa class="course-action-btn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Get Syllabus
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card-v2">
+      <div class="course-banner">
+        <span class="course-pill"><i class="fa-solid fa-comments"></i> Soft Skills</span>
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Communication Skills" loading="lazy">
+      </div>
+      <div class="course-body">
+        <h3>Business English & Interview Prep</h3>
+        <p class="desc">Fluency training, corporate email writing, presentation pitching, and personalized mock interview drills.</p>
+        
+        <div class="course-modules-list">
+          <div class="module-row"><i class="fa-solid fa-check"></i> Corporate Verbal Fluency & Tone Mastery</div>
+          <div class="module-row"><i class="fa-solid fa-check"></i> Resume Presentation & LinkedIn Branding</div>
+          <div class="module-row"><i class="fa-solid fa-check"></i> 1-on-1 Behavioral & HR Mock Interview Drills</div>
+        </div>
+
+        <div class="course-card-footer">
+          <div class="format-tag"><i class="fa-regular fa-clock"></i> 6 Weeks Live</div>
+          <a href="#" data-wa class="course-action-btn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Get Syllabus
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="comparison-section">
+  <div class="section-head">
+    <span class="tag-sub">Transparent Value</span>
+    <h2>How Reddy Academy Compares</h2>
+    <p>Why modern professionals choose our structured live bootcamps over generic video lectures.</p>
+  </div>
+
+  <div class="comparison-wrapper">
+    <div class="comp-row-head">
+      <div>Feature</div>
+      <div>Generic Video Courses</div>
+      <div>Reddy Academy</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-feature">Curriculum Delivery</div>
+      <div class="comp-other">Pre-recorded videos</div>
+      <div class="comp-reddy"><i class="fa-solid fa-check"></i> Live Interactive Classes</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-feature">Doubt Clearance</div>
+      <div class="comp-other">Community forums (Slow)</div>
+      <div class="comp-reddy"><i class="fa-solid fa-check"></i> Instant WhatsApp & Mentors</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-feature">Capstone Projects</div>
+      <div class="comp-other">Outdated clone tutorials</div>
+      <div class="comp-reddy"><i class="fa-solid fa-check"></i> 100% Industry Production Apps</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-feature">Career & Placement</div>
+      <div class="comp-other">Certificate only</div>
+      <div class="comp-reddy"><i class="fa-solid fa-check"></i> Mock Interviews & Reviews</div>
+    </div>
+  </div>
+</section>
+
 <section class="process-section" id="process">
   <div class="section-head">
-    <span class="section-tag">Seamless Procurement</span>
-    <h2>How To Order Your Equipment</h2>
-    <p>Simple, rapid 4-step process to get verified sports gear delivered directly to your field.</p>
+    <span class="tag-sub">Simple 4-Step Flow</span>
+    <h2>Your Path To Upskilling</h2>
+    <p>From day one onboarding to verified certification and career placement readiness.</p>
   </div>
 
-  <div class="process-grid">
-    <div class="process-card">
-      <div class="step-num">01</div>
-      <h3>Choose Your Gear</h3>
-      <p>Select your required sports gear, academy quantities, or fitness equipment categories.</p>
+  <div class="process-grid-modern">
+    <div class="step-card-modern">
+      <div class="step-badge-num">Step 01</div>
+      <h3>Consultation</h3>
+      <p>Connect on WhatsApp to evaluate your goals and choose the right specialization.</p>
     </div>
 
-    <div class="process-card">
-      <div class="step-num">02</div>
-      <h3>WhatsApp Inquiry</h3>
-      <p>Send your requirements directly on WhatsApp to get the instant 10% discount applied.</p>
+    <div class="step-card-modern">
+      <div class="step-badge-num">Step 02</div>
+      <h3>Live Onboarding</h3>
+      <p>Join small cohorts, access code repositories, and start interactive weekend/weekday sessions.</p>
     </div>
 
-    <div class="process-card">
-      <div class="step-num">03</div>
-      <h3>Quote Confirmation</h3>
-      <p>Review custom pricing, product specs, brand selections, and dispatch timelines.</p>
+    <div class="step-card-modern">
+      <div class="step-badge-num">Step 03</div>
+      <h3>Capstone Projects</h3>
+      <p>Build live client simulations with continuous mentor reviews and code refactoring.</p>
     </div>
 
-    <div class="process-card">
-      <div class="step-num">04</div>
-      <h3>Fast Dispatch</h3>
-      <p>Your gear is quality-inspected, packed with protective transit wrapping, and dispatched.</p>
+    <div class="step-card-modern">
+      <div class="step-badge-num">Step 04</div>
+      <h3>Certification & Hiring</h3>
+      <p>Receive your verifiable credentials and prepare for corporate technical interview rounds.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews-section">
+  <div class="section-head">
+    <span class="tag-sub">Student Experiences</span>
+    <h2>What Our Learners Say</h2>
+    <p>Real feedback from engineers and marketers who leveled up their skills.</p>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div>
+        <div class="stars-rating">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-text">"The live project reviews and WhatsApp support made a huge difference. I built a full production app in React and Node with full confidence."</p>
+      </div>
+      <div class="reviewer-meta">
+        <div class="reviewer-avatar">RK</div>
+        <div class="reviewer-info">
+          <h4>Rohit K.</h4>
+          <span>Full-Stack Batch</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div>
+        <div class="stars-rating">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-text">"Managing real ad budgets during the performance marketing track taught me more in 2 months than a year of YouTube videos."</p>
+      </div>
+      <div class="reviewer-meta">
+        <div class="reviewer-avatar">PS</div>
+        <div class="reviewer-info">
+          <h4>Pooja S.</h4>
+          <span>Marketing Track</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div>
+        <div class="stars-rating">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-text">"Mock interview sessions helped me crack my technical round with ease. Mentors give personalized attention to each student."</p>
+      </div>
+      <div class="reviewer-meta">
+        <div class="reviewer-avatar">AM</div>
+        <div class="reviewer-info">
+          <h4>Anil M.</h4>
+          <span>Data Track</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ========================================================
-     QUALITY GUARANTEE BANNER
-     ======================================================== -->
-<section class="banner-guarantee">
-  <div class="guarantee-box">
-    <h3>The Reddy Arena Quality Guarantee</h3>
-    <p>We provide 100% authentic, tested athletic gear adhering strictly to national tournament specifications.</p>
-
-    <div class="guarantee-points">
-      <div class="g-point"><i class="fa-solid fa-shield-halved"></i> 100% Authentic Pro Equipment</div>
-      <div class="g-point"><i class="fa-solid fa-shield-halved"></i> Wholesale Transparent Pricing</div>
-      <div class="g-point"><i class="fa-solid fa-shield-halved"></i> Direct 1-on-1 WhatsApp Support</div>
-    </div>
-
-    <a href="#" data-wa class="btn-primary" target="_blank" rel="noopener">
-      <i class="fa-brands fa-whatsapp"></i> Speak With Gear Specialist
-    </a>
-  </div>
-</section>
-
-<!-- ========================================================
-     FAQS
-     ======================================================== -->
 <section class="faq-section" id="faq">
   <div class="section-head">
-    <span class="section-tag">Help & Answers</span>
+    <span class="tag-sub">Clear Answers</span>
     <h2>Frequently Asked Questions</h2>
-    <p>Clear information regarding our sports gear, delivery, and institutional orders.</p>
+    <p>Everything you need to know about batch enrollments and schedules.</p>
   </div>
 
   <div class="faq-container">
     <div class="faq-item">
-      <h4>How do I apply the 10% discount on my order?</h4>
-      <p>Simply click any WhatsApp button on this page to initiate your chat. The 10% discount code will be automatically included with your order inquiry.</p>
+      <h4>How do I enroll in an upcoming batch?</h4>
+      <p>Simply tap any WhatsApp button on this page. Our academic coordinator will share syllabus brochures, batch schedules, and enrollment formalities immediately.</p>
     </div>
     <div class="faq-item">
-      <h4>Do you provide bulk discounts for academies and sports clubs?</h4>
-      <p>Yes, we specialize in institutional wholesale orders for cricket academies, schools, gym studios, and tournament organizing committees.</p>
+      <h4>Are these bootcamps beginner friendly?</h4>
+      <p>Yes. Every course starts from fundamental concepts before progressing to advanced architectural and industry implementations.</p>
     </div>
     <div class="faq-item">
-      <h4>Are your sports bats and gear match-certified?</h4>
-      <p>All our professional cricket, racket, and ball equipment are crafted strictly to official weight, dimension, and performance tournament standards.</p>
+      <h4>What if I miss a live class?</h4>
+      <p>All enrolled students receive lifetime access to high-definition session recordings, lecture notes, and GitHub source code repositories.</p>
     </div>
   </div>
 </section>
 
-<!-- ========================================================
-     LEGAL TERMS & AD POLICY DISCLAIMERS
-     ======================================================== -->
 <section class="legal-section" id="legal">
   <div class="legal-container">
     <div class="section-head" style="text-align: left; margin-bottom: 25px;">
-      <h2>Terms, Disclaimers & Operational Policies</h2>
-      <p>Mandatory regulatory disclosures for retail and wholesale sports gear commerce.</p>
+      <h2>Terms, Disclaimers & Educational Policies</h2>
+      <p>Mandatory regulatory disclosures regarding educational training and counseling.</p>
     </div>
 
-    <h3>1. Product Availability & Specifications</h3>
-    <p>Reddy Arena supplies athletic gear, protective sports equipment, and fitness accessories. Product specifications, weight tolerances, and willow grains are verified before dispatch. Images shown are for representative purposes.</p>
+    <h3>1. Course Curriculum & Delivery</h3>
+    <p>Reddy Academy provides skill enhancement training, mentorship programs, and career bootcamps. Course duration, batch slots, and syllabus modules are subject to periodic updates to match industry standards.</p>
 
-    <h3>2. Pricing & Promotional Discounts</h3>
-    <p>The 10% introductory discount applies to qualifying product categories on direct WhatsApp confirmation. Bulk wholesale contract pricing may vary according to supply volume.</p>
+    <h3>2. Privacy & Data Handling</h3>
+    <p>We strictly respect student privacy. Contact details, academic backgrounds, and career preferences submitted during counseling inquiries are confidential and used solely for educational communications.</p>
 
-    <h3>3. Privacy & Data Handling</h3>
-    <p>We respect customer privacy. Information collected during inquiries or orders (such as contact numbers or delivery addresses) is strictly used for order processing and dispatch communication.</p>
-
-    <h3>4. Platform Advertising Policy Compliance</h3>
-    <p>Reddy Arena operates independently and adheres fully to Google Ads and Meta Advertising quality guidelines. Brand names and equipment trademarks remain the property of their respective manufacturers.</p>
+    <h3>3. Advertising Policy Compliance</h3>
+    <p>Reddy Academy operates as an independent educational studio and adheres fully to Google Ads and Meta Advertising quality guidelines. Brand names and third-party software tools belong to their respective copyright holders.</p>
   </div>
 </section>
 
-<!-- ========================================================
-     BOTTOM CTA
-     ======================================================== -->
 <section class="cta-section">
   <div class="cta-box">
-    <h2>Ready To Upgrade Your Athletic Gear?</h2>
-    <p>Contact Reddy Arena on WhatsApp now to get an instant equipment quote with your 10% discount applied.</p>
+    <h2>Ready To Master New Skills & Accelerate Your Career?</h2>
+    <p>Chat with our academic advisors on WhatsApp right now to reserve your slot in the upcoming batch.</p>
     <a href="#" data-wa class="cta-btn-light" target="_blank" rel="noopener">
       <i class="fa-brands fa-whatsapp"></i>
-      Order Now On WhatsApp
+      Chat With Academic Desk
     </a>
   </div>
 </section>
 
-<!-- ========================================================
-     FOOTER
-     ======================================================== -->
 <footer>
   <div class="footer-grid">
     <div class="footer-col">
       <div class="logo" style="margin-bottom:14px;color:#fff;">
-        <div class="logo-badge"><i class="fa-solid fa-dumbbell"></i></div>
-        Reddy <span>Arena</span>
+        <div class="logo-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+        Reddy <span>Academy</span>
       </div>
-      <p>Your premier destination for pro-grade sports gear, fitness equipment, and tournament supply logistics.</p>
+      <p>Your premier training institute for practical coding bootcamps, digital marketing masterclasses, and career readiness programs.</p>
     </div>
 
     <div class="footer-col">
       <div class="footer-links">
         <a href="#">Home</a>
-        <a href="#gear">Sports Equipment</a>
-        <a href="#process">How to Order</a>
+        <a href="#features">Features</a>
+        <a href="#courses">Bootcamps</a>
+        <a href="#process">Admission</a>
         <a href="#faq">FAQ</a>
         <a href="#legal">Legal Disclaimers</a>
       </div>
@@ -1217,74 +1423,38 @@ footer {
 
     <div class="footer-col">
       <div class="footer-links">
-        <a href="#gear">Cricket & Ball Sports</a>
-        <a href="#gear">Badminton & Tennis</a>
-        <a href="#gear">Gym & Fitness Sets</a>
-        <a href="#gear">Academy Bulk Supply</a>
+        <a href="#courses">Web Development</a>
+        <a href="#courses">Performance Marketing</a>
+        <a href="#courses">Data Science & AI</a>
+        <a href="#courses">Business Communication</a>
       </div>
     </div>
 
     <div class="footer-col">
-      <h4>Contact Arena Support</h4>
-      <p style="margin-bottom:8px;"><i class="fa-solid fa-phone" style="color:var(--accent-orange);margin-right:8px;"></i> Direct Assistance</p>
-      <p style="margin-bottom:8px;"><i class="fa-brands fa-whatsapp" style="color:var(--accent-orange);margin-right:8px;"></i> WhatsApp Active</p>
-      <p><i class="fa-solid fa-globe" style="color:var(--accent-orange);margin-right:8px;"></i> reddyarena.shop</p>
+      <h4>Contact Academy Support</h4>
+      <p style="margin-bottom:8px;"><i class="fa-solid fa-phone" style="color:var(--accent-mint);margin-right:8px;"></i> Direct Academic Desk</p>
+      <p style="margin-bottom:8px;"><i class="fa-brands fa-whatsapp" style="color:var(--accent-mint);margin-right:8px;"></i> WhatsApp Active</p>
+      <p><i class="fa-solid fa-globe" style="color:var(--accent-mint);margin-right:8px;"></i> reddyacademy.online</p>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>© 2026 Reddy Arena. All Rights Reserved. Compliant with Advertising Policies.</p>
+    <p>© 2026 Reddy Academy. All Rights Reserved. Compliant with Advertising Policies.</p>
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP ICON -->
-<a href="#" data-wa class="float-wa" target="_blank" rel="noopener" aria-label="Contact Reddy Arena on WhatsApp">
+<a href="#" data-wa class="float-wa" target="_blank" rel="noopener" aria-label="Contact Reddy Academy on WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<!-- ========================================================
-     JAVASCRIPT LOGIC
-     ======================================================== -->
 <script>
-  const phoneNumber = "+918200297722"; // Update this with client's WhatsApp number
-  const message = encodeURIComponent("Hello Reddy Arena! I want Services.");
+  const phoneNumber = "+918200297722"; // Client WhatsApp number
+  const message = encodeURIComponent("Hello Reddy Academy! I want Services.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
-  // Assign WhatsApp URL to all [data-wa] links
+  // Assign dynamic WhatsApp URL to all [data-wa] links
   document.querySelectorAll("[data-wa]").forEach(function(link) {
     link.href = whatsappUrl;
-  });
-
-  // Modal Popup Logic
-  const autoModal = document.getElementById("autoModal");
-  const modalCard = document.getElementById("modalCard");
-  const modalCloseBtn = document.getElementById("modalCloseBtn");
-
-  // Show Modal Automatically on page load
-  window.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-      autoModal.classList.add("active");
-    }, 250);
-  });
-
-  // Click inside Modal Card -> Redirects to WhatsApp
-  modalCard.addEventListener("click", function(e) {
-    if (!e.target.closest("#modalCloseBtn")) {
-      window.open(whatsappUrl, "_blank");
-    }
-  });
-
-  // Close Modal on Button Click
-  modalCloseBtn.addEventListener("click", function(e) {
-    e.stopPropagation();
-    autoModal.classList.remove("active");
-  });
-
-  // Close Modal on Overlay Click (Outside Card)
-  autoModal.addEventListener("click", function(e) {
-    if (e.target === autoModal) {
-      autoModal.classList.remove("active");
-    }
   });
 </script>
 
